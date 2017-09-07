@@ -1,0 +1,112 @@
+<!Doctype html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body> 
+    <div class="success">
+        <h1>Success</h1>
+    </div>   
+    <nav>  
+        <ul class="navigation" style="text-align:center;"> 
+            <li class="mainLogo"><a href="#backg">Pet-Finder</a></li>
+            <li class="howItWorks"><a href="#HiWorks">How it works</li>
+            <li class="whatItIs"><a href="#whatItIs">What is it</li>
+            <li class="getStart"><a href="#getStrt">Get Started</a></li>
+            <li class="getStart"><a onclick="window.location.href='main.html'">Pets Map</a></li>
+
+        </ul>
+    </nav>
+<div id="backg"> 
+    <div class="video-container" id="mainPg">
+        <video class='video' preload="auto" autoplay="true" loop="loop" muted="muted">
+                <source src="videoplayback.mp4" type="video/mp4"></source>
+        </video>
+            
+    </div>
+
+    <div class="Lg">
+        <div class="centr">
+            <h1 class="petFinder">Pet-Finder <hr></h1>
+            <p class="txt">You seek - you find.</p>
+        </div>
+    </div>
+</div>
+<div class="wrapper" id="getStrt">
+<div class="main">
+
+    <!-- Input Fields -->
+    <div class="inputFields" >
+        <input type="text" class='findPet' onkeydown="check()"  placeholder="Write down name of ur pet">
+        <button class="regPet" onclick="show()">Reg Pet</button>
+        <span class="regPet__span ">Register a pet</span>
+        <input type="button" class="btn-6d" style="width: 550px;
+    height: 100px;" value="Visit our main page" onclick="window.location.href='found.html'">
+    </div>
+    <!-- Input Fields -->
+
+    <!-- Registration form -->
+    <div class="reg__form">
+        <form action="index.html">
+
+             <label for="image">Pet`s image url:</label>
+            <input id="imaim" type="text" name="img" accept="image/jpeg,image/png,image/gif"><br>
+
+            <label for="name">Pet`s name:</label>
+            <input type="text" id="name" class="np" placeholder="Murzik" onkeydown="takeInfo()" value=" "><br>
+
+            <label for="nameOwner">Your name  :</label>
+            <input type="text" id="nameOwner" class="np" placeholder="John" onkeydown="takeInfo()"><br>
+
+
+            <label for="petColor">Color, description:</label><br>
+            <input type="text" id="petColor" class="np" placeholder="Light-yellow" onkeydown="takeInfo()"><br>
+
+            <label for="desc">Details:</label>
+            <textarea id='desc' onkeydown="takeInfo()"></textarea><br>
+
+            <label for="tel">Your mobile phone:</label>
+            <input type="tel" id="tel" class="np" placeholder="0984785746" onkeydown="takeInfo()"><br>
+
+            <label for="page">Your animal is lost or needs the owner?</label><br>
+            <input type="radio" name="page" value="lost" checked> Lost<br>
+      <input type="radio" name="page" value="withoutOwner"> Needs owner<br>
+            <label for="mapsearch">Pet`s last location:</label>
+            <input id="mapsearch" class="controls" type="text" placeholder="Search Box" required><br>
+             <input type="button" class="sb" id="acceptSumbit" value="Submit" onclick="acceptForm()">
+        </form>
+    </div>
+        <!-- ENF OF Registration form -->
+    </div>
+</div>
+
+<div class="whatIsIt" id="whatItIs">
+    <h1>What is Pet-Finder</h1>
+<p>It`s A service, which provides you with help to find yourself a pet or to find the lost one. If you want to find yourself a dog, cat, tortoise, parrot, snake or any other pet - you are going to find them here. If you have lost your pet, PetFinder is a perfect solution, because here you can share with whole Ukraine where and when did you lose your pet, let them know how it looks and if someone finds your pet, they will contact you! You can also specify the reward for your pet finding in description. <br><br><p id="insp" style="color:white; font-size: 40px;background: linear-gradient(#87d187, #cef3ce, #cef3cc); border-left-color:linear-gradient(#87d187,#cef3ce,#cef3cc)">You search a pet and you find it! Simple, isn`t it?</p></p>
+	</div>
+<div class="howDoesItWork" id="HiWorks">
+    <h1>How it works</h1>
+    <p>
+    	When you register your pet, everybody sees it and calls you if they found it.<br><br> You also can search lost pets if you need extra income or just want to help people.<br><br>
+    	If you Just want to find yourself a pet, you can search animals for sale.
+        <p id="insp" style=" text-align:center;color:white; font-size: 40px;background: linear-gradient(#7c7cc9, #acace5, #cacaf1); border-left-color:linear-gradient(#7c7cc9, #acace5, #cacaf1)"><br>Find your pet!
+    <p style="color:#00002b ; text-align:center">Use your opportunity<br>let the others know about your pet<br><br>Register now</p></p>
+    </p>
+</div>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDy8j1g16qEY76iMKwPztlwlCf54H59wRg&libraries=places"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src=" script.js "></script>
+    <script type="text/javascript">
+
+      var searchBox= new google.maps.places.SearchBox(document.getElementById('mapsearch'));
+    </script>
+</body>
+
+</html>
