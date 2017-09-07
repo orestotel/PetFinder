@@ -1,0 +1,50 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Found Pet</title>
+    <style>
+    h2 {
+        padding-top: 50px;
+    }
+
+    
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        
+        <ul>
+            <li  class="logo" onclick="window.location.href='index.html'">PetFinder</li>
+            <li class="found" onclick="window.location.href='main.html'">Pets map</li>
+            <li class="found" onclick="changePage('withoutOwner')">Need owner</li>
+            <li class="not__found" onclick="changePage('lost')">Not Found</li>
+        </ul>
+    </div>
+
+
+
+    <div class="wrap__found__dog" id="out">
+        
+    </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+         <script src="script.js"></script>
+        <script type="text/javascript">
+
+    var page="lost";
+     
+  getPets();
+      
+
+function changePage(a) {
+    page=a;
+    sortPets();
+}
+
+
+        </script>
+</body>
+</html>
