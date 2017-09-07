@@ -9,7 +9,7 @@
   <body>
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-   <div class="header">
+   <div class="header"  style="border-bottom:2.2px solid lightgrey">
         <ul>
             <li class="logo" onclick="window.location.href='index.html'">PetFinder</li>
             <li class="found" onclick="window.location.href='found.html'">All pets</li>
@@ -23,7 +23,7 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <!--  <script src="script.js"></script> -->
 
-    <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+    <input style="margin-top:14px"id="pac-input" class="controls" type="text" placeholder="Search Box">
     <div id="map"></div>
     <script type="text/javascript">
     
@@ -71,7 +71,12 @@
           if (places.length == 0) {
             return;
           }
-          
+
+          // markers.forEach(function(marker) {
+          //   marker.setMap(null);
+          // });
+          // markers = [];
+
           var bounds = new google.maps.LatLngBounds();
           places.forEach(function(place) {
             if (!place.geometry) {
