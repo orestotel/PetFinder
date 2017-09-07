@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Pushy",
+    "nameOwner": "Petro",
+    "color": "yellow",
+    "desc": "Pretty brown cat was lost!",
+    "tel": "+380933435565",
+    "img": "https://cdn4.iconfinder.com/data/icons/small-n-flat/24/cat-128.png",
+    "lastseen":"Lviv High Castle, Lviv, Lviv Oblast, Ukraine",
+    "location":{lat:49.848311,lng:24.039411},
+    "page": "lost",
+    "status": "notfound"
+  },
+  {
+    "name": "Raider",
+    "nameOwner": "Vasylyna",
+    "color": "brown-black",
+    "desc": " Someone might steal a purebred dog in the hopes of selling it to an unsuspecting individual. This is known . Small, purebred dogs like Yorkshire Terriers, Pomeranians",
+    "tel": "+380932436775",
+    "img": "https://cdn0.iconfinder.com/data/icons/isometric-farm-animals/160/dog-01-128.png",
+    "lastseen":"Lviv Railway Station, Dvirtseva Square, Lviv, Lviv Oblast, Ukraine",
+    "location":{lat:49.83974,lng:23.994429},
+    "page": "lost",
+    "status": "notfound"
+  },
+  {
+    "name": "Myrka",
+    "nameOwner": "Kate",
+    "color": "red-orange",
+    "desc": "Red cat lost in forest.Please help find it.",
+    "tel": "+3809334545455",
+    "img": "https://cdn2.iconfinder.com/data/icons/cat-power/128/cat_walk.png",
+    "lastseen":"Opera, Lviv, Lviv Oblast, Ukraine",
+    "location":{lat:49.844017,lng:24.026212},
+    "page": "withoutOwner",
+    "status": "notfound"
+  },
+  {
+    "name": "Rex",
+    "nameOwner": "Vasya",
+    "color": "white",
+    "desc": "Beauty dog lost in city .Please help find it.",
+    "tel": "+3809834545758",
+    "img": "https://cdn2.iconfinder.com/data/icons/cutecritters/t9dog2_trans.png",
+    "lastseen":"Vynnyky, Lviv Oblast, Ukraine",
+    "location":{lat:  49.81221, lng: 24.143556},
+    "page": "withoutOwner",
+    "status": "notfound"
+  },
+  {
+    "name": "loopy",
+    "nameOwner": "Andy",
+    "color": "orange",
+    "desc": "Panda lost in the village .Please help find it.",
+    "tel": "+3809534475855",
+    "img": "https://cdn2.iconfinder.com/data/icons/cutecritters/t9panda_trans.png",
+    "lastseen":"Rynok Square, Lviv, Lviv Oblast, Ukraine",
+    "location":{lat:49.841328,lng:24.031592},
+    "page": "lost",
+    "status": "notfound"
+  },
+  {
+    "name": "peet",
+    "nameOwner": "Andrew",
+    "color": "white",
+    "desc": "This Pet lost in the village .Please help find it.",
+    "tel": "+3809634770015",
+    "img": "https://cdn2.iconfinder.com/data/icons/cutecritters/t9tuqui_trans.png",
+    "lastseen":"Lviv Tourist Information Centre, Львів, Україна",
+    "location":{lat:49.842554,lng:24.032568},
+    "page": "withoutOwner",
+    "status": "notfound"
+  }
+]
