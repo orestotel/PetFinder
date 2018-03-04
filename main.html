@@ -3,30 +3,52 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+
     <title>PetFinder:pet map</title>
-    
+<style>
+[role="button"] {
+  background-color: #eee;
+  border: solid #ccc 1px;
+  margin-top: 80px;
+  color: black;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+</style>
   </head>
   <body>
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-   <div class="header"  style="border-bottom:2.2px solid lightgrey">
-        <ul>
-            <li class="logo" onclick="window.location.href='index.html'">PetFinder</li>
-            <li class="found" onclick="window.location.href='found.html'">All pets</li>
-        </ul>
-    </div>
-  
 
-  
+<!--Navigation bar -> adapt to every page for good browsing and UI-->
+
+  <nav>
+      <ul class="navigation" style="text-align:center;">
+          <li class="mainLogo"><a href="index.html">Pet-Finder</a></li>
+          <li class="howItWorks"><a href="index.html#HiWorks">How it works</li>
+          <li class="whatItIs"><a href="index.html#whatItIs">What is it</li>
+          <li class="getStart"><a href="index.html#getStrt">Get Started</a></li>
+          <li class="howItWorks"><a href="found.html">All pets</li>
+          <li class="getStart"style = "color:blue"><a href="main.html">Pets Map</a></li>
+
+      </ul>
+  </nav>
+
+
+
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDy8j1g16qEY76iMKwPztlwlCf54H59wRg&libraries=places&callback=initAutocomplete"
     async defer></script>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <!--  <script src="script.js"></script> -->
 
-    <input style="margin-top:14px"id="pac-input" class="controls" type="text" placeholder="Search Box">
+    <input style="margin-top:96.8px; border:0.2px solid darkblue"id="pac-input" class="controls" type="text" placeholder="Search Box">
     <div id="map"></div>
     <script type="text/javascript">
-    
+
+//Google Maps API reference. To understand read documentation
+
          function initAutocomplete() {
         var map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 49.8413276, lng: 24.0315923},
@@ -50,7 +72,7 @@
     pets=data;
      for (var i = 0; i < pets.length; i++) {
           pets[i]
-        
+
        markers.push(new google.maps.Marker({
               map: map,
               title: pets[i].name+ " "+pets[i].lastseen,
@@ -62,7 +84,7 @@
         console.log("error")})
         .always(function() {
         console.log("complete")});
-       
+
       }
       showMarkers();
         searchBox.addListener('places_changed', function() {
@@ -91,7 +113,7 @@
             //   scaledSize: new google.maps.Size(25, 25)
             // };
 
-            
+
 
             if (place.geometry.viewport) {
               bounds.union(place.geometry.viewport);

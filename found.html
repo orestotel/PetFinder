@@ -9,25 +9,29 @@
         padding-top: 50px;
     }
 
-    
+
 
     </style>
 </head>
-<body>
-    <div class="header">
-        
-        <ul>
+<body style=" background-image: linear-gradient(black, grey,white, transparent, darkgrey)">
+    <div style="min-height:200px;">
+<nav>
+        <ul class="navigation">
             <li  class="logo" onclick="window.location.href='index.html'">PetFinder</li>
-            <li class="found" onclick="window.location.href='main.html'">Pets map</li>
-            <li class="found" onclick="changePage('withoutOwner')">Need owner</li>
-            <li class="not__found" onclick="changePage('lost')">Not Found</li>
+            <li  class="not__found" onclick="window.location.href='main.html'"><a>Pets map</a></li>
+            <li  class="not__found" onclick="changePage('withoutOwner')">Need owner</li>
+            <li  class="not__found" onclick="changePage('lost')">Not Found</li>
+            <li  class="howItWorks"onclick="window.location.href='index.html#HiWorks'"><a href="">How it works</li>
+            <li  class="whatItIs"onclick="window.location.href='index.html#whatItIs'"><a href="">What is it</li>
+            <li  class="getStart"onclick="window.location.href='index.html#getStrt'"><a href="">Get Started</a></li>
         </ul>
+</nav>
     </div>
 
 
 
     <div class="wrap__found__dog" id="out">
-        
+
     </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -35,9 +39,9 @@
         <script type="text/javascript">
 
     var page="lost";
-     
+
   getPets();
-      
+
 
 function changePage(a) {
     page=a;

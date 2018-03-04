@@ -11,7 +11,7 @@ function check() {
                         $('.regPet').click(function() {
                             $('.success').css('top', '11%').css('padding-top', '30px').text('We found your pet:)\n redirecting...').fadeIn('slow');
                             setTimeout(function() {
-                            $('.success').fadeOut();                                
+                            $('.success').fadeOut();
                             }, 2000)
                             setTimeout(function () {
                             var url = "found.html"
@@ -181,7 +181,7 @@ function getPets() {
 }
 
 function sortPets() {
-    var currentPet = 0, 
+    var currentPet = 0,
         line = "";
     for (var i = 0; i < pets.length; i++) {
         currentPet = pets[i];
@@ -222,5 +222,3 @@ function updatePets(petsUpdated) {
         }
     });
 }
-
-
